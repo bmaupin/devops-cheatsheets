@@ -29,3 +29,13 @@ p code {
   @page { margin: 0; }
   body { margin: 1.6cm; }
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../fonts/SourceCodePro-Regular.otf.woff2') format('woff2');
+}
