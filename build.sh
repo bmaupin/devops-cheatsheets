@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# for texfile in *.tex; do
-#     pdflatex $texfile
-# done
-
-for mdfile in *.md; do
-    pandoc -S $mdfile -o ${mdfile/.md/.pdf}
+for htmlfile in *.html; do
+    /opt/google/chrome/chrome --headless --disable-gpu --print-to-pdf file://$(pwd)/$htmlfile
 done
