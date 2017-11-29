@@ -1,0 +1,31 @@
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+code, pre {
+  font-family: "Source Code Pro", monospace;
+}
+
+h2, h3 {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+p {
+  margin: 0 0 1rem 3rem;
+}
+
+p code {
+  background-color: #f2f2f2;
+  border-radius: .25rem;
+  padding: .2rem .4rem;
+}
+
+@media print {
+  /* Remove headers and footers added by Chrome when printing */
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
+}
