@@ -1,6 +1,7 @@
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
+  margin: 1cm;
 }
 
 code, pre {
@@ -14,6 +15,10 @@ h2, h3 {
   padding: 0.5em;
 }
 
+h2:first-child, h3:first-child {
+  margin-top: 0;
+}
+
 p {
   margin: 0 0 1rem 3rem;
 }
@@ -24,10 +29,14 @@ p code {
   padding: .2rem .4rem;
 }
 
-@media print {
-  /* Remove headers and footers added by Chrome when printing */
-  @page { margin: 0; }
-  body { margin: 1.6cm; }
+ul {
+  margin: 0 0 1rem 3rem;
+  padding: 0;
+}
+
+/* Remove headers and footers added by Chrome when printing */
+@page {
+  margin: 0;
 }
 
 @font-face {
