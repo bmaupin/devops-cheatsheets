@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 body {
   font-family: Roboto;
   line-height: 1.5;
@@ -37,14 +40,4 @@ ul {
 /* Remove headers and footers added by Chrome when printing */
 @page {
   margin: 0;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  src: url('../fonts/SourceCodePro-Regular.otf.woff2') format('woff2');
 }
