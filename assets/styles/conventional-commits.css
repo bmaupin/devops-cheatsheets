@@ -1,0 +1,8 @@
+h2, h3 {
+  /* https://www.conventionalcommits.org/ */
+  background-color: #fa6673;
+}
+
+li {
+  margin-bottom: 1em;
+}
