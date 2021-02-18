@@ -1,11 +1,11 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   line-height: 1.5;
   margin: 1cm;
 }
 
 code, pre {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro";
 }
 
 h2, h3 {
