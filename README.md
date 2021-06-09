@@ -1,3 +1,6 @@
-[![Build Status](https://travis-ci.org/bmaupin/devops-cheatsheets.svg?branch=master)](https://travis-ci.org/bmaupin/devops-cheatsheets)
+[![Build](https://github.com/bmaupin/devops-cheatsheets/workflows/ci/badge.svg)](https://github.com/bmaupin/devops-cheatsheets/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bmaupin/devops-cheatsheets/blob/master/LICENSE)
+
 ---
+
+See [Releases](../../releases)
