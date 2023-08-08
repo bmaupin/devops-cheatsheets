@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Code smells</title>
+  <link href="assets/styles/cheatsheet.css" rel="stylesheet">
+  <link href="assets/styles/code-smells.css" rel="stylesheet">
+</head>
+
+<body>
+  <h3>Long parameter list</h3>
+  <p>
+    When a method takes more than 3 or 4 parameters
+  </p>
+  <p>
+    Solution: Consider putting the parameters in an object and passing that object to the method
+  </p>
+
+  <h3>Sequential coupling (or temporal coupling)</h3>
+  <p>
+    A form of coupling where a class requires its methods to be called in a particular sequence (<a
+      href="https://en.wikipedia.org/wiki/Sequential_coupling">source</a>)
+  </p>
+  <p>
+    Solution: The key to sequence-type temporal coupling is making the sequences obvious or eliminating them completely.
+    Make it easy to avoid getting it wrong. (<a
+      href="https://www.pluralsight.com/tech-blog/forms-of-temporal-coupling/">source</a>)
+  </p>
+</body>
+
+</html>
