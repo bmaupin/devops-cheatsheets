@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Ansible cheat sheet</title>
-    <link href="assets/styles/cheatsheet.css" rel="stylesheet">
-    <link href="assets/styles/ansible.css" rel="stylesheet">
+    <link href="assets/styles/cheatsheet.css" rel="stylesheet" />
+    <link href="assets/styles/ansible.css" rel="stylesheet" />
   </head>
   <body>
     <h3>Run a playbook</h3>
@@ -11,38 +11,54 @@
       <code>ansible-playbook -i /path/to/inventory /path/to/playbook.yml</code>
     </p>
     <p>
-      <code>--diff</code> show differences when changing files<br>
-      <code>--check</code> dry run; don't make any changes<br>
-      <code>--tags tcserver-configure</code> only run plays/tasks with these tags<br>
-      <code>--limit server1.example.com</code> further limit to these hosts<br>
-      <code>--syntax-check</code> check syntax but don't run playbook<br>
-      <code>-vvvv</code> verbose<br>
+      <code>--diff</code> show differences when changing files<br />
+      <code>--check</code> dry run; don't make any changes<br />
+      <code>--tags tcserver-configure</code> only run plays/tasks with these
+      tags<br />
+      <code>--limit server1.example.com</code> further limit to these hosts<br />
+      <code>--syntax-check</code> check syntax but don't run playbook<br />
+      <code>-vvvv</code> verbose<br />
     </p>
 
     <h3>Run an ad-hoc task</h3>
     <p>
-      <code>ansible &lt;host-pattern&gt; -i /path/to/inventory -m &lt;module&gt; [-a &lt;args&gt;]</code>
+      <code
+        >ansible &lt;host-pattern&gt; -i /path/to/inventory -m &lt;module&gt;
+        [-a &lt;args&gt;]</code
+      >
     </p>
     <p>
-      <code>&lt;host-pattern&gt;</code> one or more hosts or groups (separated by commas)<br>
-      <code>&lt;module&gt;</code> specify the module to run, e.g. <code>-m shell</code><br>
-      <code>&lt;args&gt;</code> specify the module arguments, e.g. <code>-a 'rpm -qa | grep tc-server'</code><br>
-      <code>-b</code> sudo as another user<br>
-      <code>--become-user</code> user to sudo as<br>
+      <code>&lt;host-pattern&gt;</code> one or more hosts or groups (separated
+      by commas)<br />
+      <code>&lt;module&gt;</code> specify the module to run, e.g.
+      <code>-m shell</code><br />
+      <code>&lt;args&gt;</code> specify the module arguments, e.g.
+      <code>-a 'rpm -qa | grep tc-server'</code><br />
+      <code>-b</code> sudo as another user<br />
+      <code>--become-user</code> user to sudo as<br />
     </p>
     <p>
-      List all ansible variables for a host<br>
-      <code>ansible &lt;host-pattern&gt; -i /path/to/inventory -m debug -a "var=hostvars[inventory_hostname]"</code>
+      List all ansible variables for a host<br />
+      <code
+        >ansible &lt;host-pattern&gt; -i /path/to/inventory -m debug -a
+        "var=hostvars[inventory_hostname]"</code
+      >
     </p>
 
     <h3>Ansible Vault</h3>
     <p>
-      <code>ansible-vault [create|decrypt|edit|encrypt|view] /path/to/vault.yml</code>
+      <code
+        >ansible-vault [create|decrypt|edit|encrypt|view]
+        /path/to/vault.yml</code
+      >
     </p>
 
     <h3>Vocabulary</h3>
     <ul>
-      <li>Inventory - hosts, which groups they belong to, and variables specific to them (group_vars/host_vars)</li>
+      <li>
+        Inventory - hosts, which groups they belong to, and variables specific
+        to them (group_vars/host_vars)
+      </li>
       <li>Role - a collection of tasks, files, etc to apply</li>
       <li>Playbook - applies one or more roles to a host or group</li>
     </ul>
