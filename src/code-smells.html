@@ -7,6 +7,18 @@
   </head>
 
   <body>
+    <h3>Using timeout or sleep in code</h3>
+    <p>
+      Using pause/sleep/timeout in your code to get around timing issues. This
+      is often a sign of a bigger problem in the code, perhaps a bug or race
+      condition. Using sleep without understanding the root problem can
+      introduce flaky behaviour in the code as well as race conditions.
+    </p>
+    <p>
+      Solution: Take the time to fully understand the problem to figure out
+      what's causing the timing issue in the first place
+    </p>
+
     <h3>Long parameter list</h3>
     <p>When a method takes more than 3 or 4 parameters</p>
     <p>
